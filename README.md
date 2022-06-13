@@ -9,7 +9,7 @@ A Storybook to use [stylers.cloud](https://stylers.cloud) in your storybook
 Install using npm/yarn
 
 ```sh
-npm install storybook-addon-stylerscloud
+yarn add -D storybook-addon-stylerscloud
 ```
 
 ### 2. Register the addon in `main.js`
