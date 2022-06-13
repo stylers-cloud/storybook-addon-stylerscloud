@@ -1,8 +1,8 @@
 # Storybook stylers.cloud Addon
 
-A Storybook use [stylers.cloud](https://stylers.cloud) in your storybook
+A Storybook to use [stylers.cloud](https://stylers.cloud) in your storybook
 
-## Install and Configure
+## Getting started
 
 ### 1. Install
 
@@ -39,6 +39,9 @@ addParameters({
 ## Using stylers.cloud in storybook
 
 You can open stylers.cloud window from top-right corner inside Canvas/Docs frame.
+
+![localhost_6006__path=_story_example-button--primary](https://user-images.githubusercontent.com/1194439/173340392-89e682ea-846e-4636-bc21-2c54b15c8169.png)
+
 
 ## More about stylers.cloud
 
