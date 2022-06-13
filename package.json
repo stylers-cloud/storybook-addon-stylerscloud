@@ -82,7 +82,7 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "use stylers.cloud",
+    "displayName": "stylers.cloud",
     "supportedFrameworks": [
       "react",
       "vue",
@@ -94,6 +94,6 @@
       "preact",
       "react-native"
     ],
-    "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
+    "icon": "https://avatars.githubusercontent.com/u/75251980?s=200&v=4"
   }
 }
