@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/stylers-cloud/sstorybook-addon-stylerscloud"
+    "url": "https://github.com/stylers-cloud/storybook-addon-stylerscloud"
   },
   "author": "pomali <pom@stylers.cloud>",
   "license": "MIT",
