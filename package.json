@@ -6,7 +6,10 @@
     "storybook-addons",
     "storybook",
     "addons",
-    "storybook-addons"
+    "design",
+    "css",
+    "style",
+    "stylers.cloud"
   ],
   "repository": {
     "type": "git",
@@ -83,6 +86,7 @@
   },
   "storybook": {
     "displayName": "stylers.cloud",
+    "unsupportedFrameworks": [],
     "supportedFrameworks": [
       "react",
       "vue",
