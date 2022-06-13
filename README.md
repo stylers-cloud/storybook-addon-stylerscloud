@@ -45,4 +45,5 @@ You can open stylers.cloud window from top-right corner inside Canvas/Docs frame
 
 ## More about stylers.cloud
 
-If you are not using [stylers.cloud](https://stylers.cloud) client yet, you can try it using [css.support](http://css.support/) on small standalone task for free (while in beta).
+[stylers.cloud](https://www.stylers.cloud/?utm_source=gh) is start-up automating CSS. 
+If you are not our client yet, feel free to  [contact us](https://www.stylers.cloud/?utm_source=gh).
