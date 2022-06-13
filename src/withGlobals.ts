@@ -4,9 +4,10 @@ import {
   useEffect,
   useGlobals,
 } from "@storybook/addons";
+import { PARAM_KEY } from "./constants";
 
 export const withGlobals: DecoratorFunction = (StoryFn, context) => {
-  const projectId = useParameter("stylersCloudProjectId");
+  const projectId = useParameter(PARAM_KEY);
   const globals = useGlobals();
   // Is the addon being used in the docs panel
   const isInDocs = context.viewMode === "docs";
