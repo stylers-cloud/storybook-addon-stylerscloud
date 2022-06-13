@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-stylerscloud",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "use stylers.cloud in your storybook",
   "keywords": [
     "storybook-addons",
