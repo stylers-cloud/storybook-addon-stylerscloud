@@ -47,7 +47,7 @@ If you want to use only css.support this way add `stylersCloudSupportMode: true`
 
 To get domain hashes for `stylersCloudNonProdDomains` you can use this code:
 
-```
+```js
 var domain = location.hostname.split('.').slice(-3).join('.');
 function hash(s) {var h=0,l=s.length,i;if(l==0)return h;for(i=0;i<l;i++){h=((h<<5)-h)+s.charCodeAt(i);h=h&h;}return h;}
 hash(domain)
