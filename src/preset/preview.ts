@@ -8,15 +8,30 @@
  *
  * https://storybook.js.org/docs/react/writing-stories/decorators#gatsby-focus-wrapper
  */
-import { PARAM_KEY } from "../constants";
+import {
+  PARAM_KEY_PROJECT_ID,
+  PARAM_KEY_DOMAINS,
+  PARAM_KEY_SUPPORT_MODE,
+} from "../constants";
 import { withGlobals } from "../withGlobals";
 
 export const decorators = [withGlobals];
 
 export const globalTypes = {
-  stylersCloudProjectId: {
-    name: PARAM_KEY, // "stylersCloudProjectId"
+  [PARAM_KEY_PROJECT_ID]: {
+    // "stylersCloudProjectId"
+    name: PARAM_KEY_PROJECT_ID,
     description: "stylers.cloud project id",
     defaultValue: "please-fill-this-out",
+  },
+  [PARAM_KEY_DOMAINS]: {
+    name: PARAM_KEY_DOMAINS,
+    description: "stylers.cloud open on these domains (hashes)",
+    defaultValue: [-1204607085, 1505998205],
+  },
+  [PARAM_KEY_SUPPORT_MODE]: {
+    name: PARAM_KEY_SUPPORT_MODE,
+    description: "use standalone mode",
+    defaultValue: false,
   },
 };
