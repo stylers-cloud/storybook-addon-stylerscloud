@@ -44,6 +44,7 @@
     "eject-ts": "zx scripts/eject-typescript.mjs"
   },
   "devDependencies": {
+    "@auto-it/conventional-commits": "^10.37.1",
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
@@ -100,5 +101,11 @@
       "react-native"
     ],
     "icon": "https://avatars.githubusercontent.com/u/75251980?s=200&v=4"
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "conventional-commits"
+    ]
   }
 }
