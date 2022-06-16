@@ -1,6 +1,6 @@
 # Storybook stylers.cloud Addon
 
-A Storybook to use [stylers.cloud](https://www.stylers.cloud/?utm_source=gh) in your storybook
+A Storybook addon to use [stylers.cloud](https://www.stylers.cloud/?utm_source=gh) in your storybook
 
 ## Getting started
 
