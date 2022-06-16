@@ -29,7 +29,7 @@ Configure addon with your stylers.cloud project id in `.storybook/preview.js` (e
 
 ```js
 // .storybook/preview.js
-import { addParameters } from "@storybook/react";
+import { addParameters } from "@storybook/react"; // change `react` to `vue` or `angular` depending on framework you use
 
 addParameters({
   stylersCloudProjectId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
@@ -39,7 +39,6 @@ addParameters({
 
 You can find project id (`stylersCloudProjectId`) in client settings or in snippet we sent you.
 
-To get domain hashes
 
 If you want to use only css.support this way add `stylersCloudSupportMode: true` to config and remove `stylersCloudNonProdDomains`.
 
@@ -47,7 +46,7 @@ If you want to use only css.support this way add `stylersCloudSupportMode: true`
 
 To get domain hashes required in `stylersCloudNonProdDomains` you can use this code:
 
-1. open domain where stylers.cloud should run
+1. open domain where stylers.cloud should run (eg. dev.example.com)
 2. run code below in devtools console
 3. output of script is hash of domain you are currently on (insert it to `stylersCloudNonProdDomains`)
 
