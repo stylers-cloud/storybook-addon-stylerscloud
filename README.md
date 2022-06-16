@@ -29,16 +29,13 @@ Configure addon with your stylers.cloud project id in `.storybook/preview.js` (e
 
 ```js
 // .storybook/preview.js
-import { addParameters } from "@storybook/react"; // change `react` to `vue` or `angular` depending on framework you use
-
-addParameters({
+export const parameters = {
   stylersCloudProjectId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
   stylersCloudNonProdDomains: [-1204607085, 1505998205],
 });
 ```
 
 You can find project id (`stylersCloudProjectId`) in client settings or in snippet we sent you.
-
 
 If you want to use only css.support this way add `stylersCloudSupportMode: true` to config and remove `stylersCloudNonProdDomains`.
 

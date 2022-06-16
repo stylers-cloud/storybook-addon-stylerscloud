@@ -4,17 +4,29 @@ import {
   useEffect,
   useGlobals,
 } from "@storybook/addons";
-import { PARAM_KEY_DOMAINS, PARAM_KEY_PROJECT_ID, PARAM_KEY_SUPPORT_MODE } from "./constants";
+import {
+  PARAM_KEY_DOMAINS,
+  PARAM_KEY_PROJECT_ID,
+  PARAM_KEY_SUPPORT_MODE,
+} from "./constants";
 
 export const withGlobals: DecoratorFunction = (StoryFn, context) => {
   const projectId = useParameter(PARAM_KEY_PROJECT_ID);
+  const domains = useParameter(PARAM_KEY_DOMAINS);
+  const supportMode = useParameter(PARAM_KEY_SUPPORT_MODE);
+  const stylersCloud = {
+    [PARAM_KEY_PROJECT_ID]: projectId,
+    [PARAM_KEY_DOMAINS]: domains,
+    [PARAM_KEY_SUPPORT_MODE]: supportMode,
+  };
+
   const globals = useGlobals();
   // Is the addon being used in the docs panel
   const isInDocs = context.viewMode === "docs";
 
   useEffect(() => {
     displayToolState({
-      projectId,
+      stylersCloud,
       globals,
       isInDocs,
     });
@@ -24,13 +36,15 @@ export const withGlobals: DecoratorFunction = (StoryFn, context) => {
 };
 
 function displayToolState(state: any) {
-  if (!state[PARAM_KEY_SUPPORT_MODE]) {
+  if (!state.stylersCloud[PARAM_KEY_SUPPORT_MODE]) {
     const windowAny = window as any;
     if (windowAny.stylersCloud) return;
     var sc = (windowAny.stylersCloud = {
       config: {
-        projectId: state[PARAM_KEY_PROJECT_ID],
-        nonProdDomains: state[PARAM_KEY_DOMAINS] || [-1204607085, 1505998205], // see the link in comment above
+        projectId: state.stylersCloud[PARAM_KEY_PROJECT_ID],
+        nonProdDomains: state.stylersCloud[PARAM_KEY_DOMAINS] || [
+          -1204607085, 1505998205,
+        ], // see the link in comment above
         realtimePreview: true,
         nonFlickering: true,
       },
@@ -43,7 +57,7 @@ function displayToolState(state: any) {
     if (!(window as any).stylersCloud) {
       (window as any).stylersCloud = {
         config: {
-          projectId: state.projectId,
+          projectId: state.stylersCloud[PARAM_KEY_PROJECT_ID],
           supportModeOnly: true,
           openAfterInit: document.readyState === "complete",
         },
