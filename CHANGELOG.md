@@ -1,3 +1,19 @@
+# v0.1.2 (Thu Jun 16 2022)
+
+#### 🐛 Bug Fix
+
+- fix: storybook addons catalog readme (pom@stylers.cloud)
+
+#### ⚠️ Pushed to `main`
+
+- docs: update readme (pom@stylers.cloud)
+
+#### Authors: 1
+
+- Stanislav Parnicky (pom@stylers.cloud)
+
+---
+
 # v0.1.1 (Thu Jun 16 2022)
 
 #### 🐛 Bug Fix
