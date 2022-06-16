@@ -25,7 +25,7 @@ module.exports = {
 
 ### 3. Configure with project id
 
-Configure addon with your stylers.cloud project id in `.storybook/preview.js`
+Configure addon with your stylers.cloud project id in `.storybook/preview.js` (edit or create it)
 
 ```js
 // .storybook/preview.js
@@ -45,15 +45,29 @@ If you want to use only css.support this way add `stylersCloudSupportMode: true`
 
 #### Domain hashes
 
-To get domain hashes for `stylersCloudNonProdDomains` you can use this code:
+To get domain hashes required in `stylersCloudNonProdDomains` you can use this code:
+
+1. open domain where stylers.cloud should run
+2. run code below in devtools console
+3. output of script is hash of domain you are currently on (insert it to `stylersCloudNonProdDomains`)
 
 ```js
-var domain = location.hostname.split('.').slice(-3).join('.');
-function hash(s) {var h=0,l=s.length,i;if(l==0)return h;for(i=0;i<l;i++){h=((h<<5)-h)+s.charCodeAt(i);h=h&h;}return h;}
-hash(domain)
+var domain = location.hostname.split(".").slice(-3).join(".");
+function hash(s) {
+  var h = 0,
+    l = s.length,
+    i;
+  if (l == 0) return h;
+  for (i = 0; i < l; i++) {
+    h = (h << 5) - h + s.charCodeAt(i);
+    h = h & h;
+  }
+  return h;
+}
+hash(domain);
 ```
 
-here are defaults
+exising defaults are
 
 ```
 localhost = -1204607085
