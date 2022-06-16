@@ -1,3 +1,20 @@
+# v0.1.0 (Thu Jun 16 2022)
+
+#### 🚀 Enhancement
+
+- feat: bump + update readme ([@pomali](https://github.com/pomali))
+
+#### ⚠️ Pushed to `main`
+
+- docs: update readme ([@pomali](https://github.com/pomali))
+- build: add conventional-commits auto plugin ([@pomali](https://github.com/pomali))
+
+#### Authors: 1
+
+- [@pomali](https://github.com/pomali)
+
+---
+
 # v0.0.6 (Wed Jun 15 2022)
 
 #### ⚠️ Pushed to `main`
