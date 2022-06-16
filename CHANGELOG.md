@@ -1,3 +1,15 @@
+# v0.1.1 (Thu Jun 16 2022)
+
+#### 🐛 Bug Fix
+
+- fix: using addon parameters ([@pomali](https://github.com/pomali))
+
+#### Authors: 1
+
+- [@pomali](https://github.com/pomali)
+
+---
+
 # v0.1.0 (Thu Jun 16 2022)
 
 #### 🚀 Enhancement
