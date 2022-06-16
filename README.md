@@ -37,7 +37,7 @@ export const parameters = {
 
 You can find project id (`stylersCloudProjectId`) in client settings or in snippet we sent you.
 
-If you want to use only css.support this way add `stylersCloudSupportMode: true` to config and remove `stylersCloudNonProdDomains`.
+If you want to use only [css.support](https://www.stylers.cloud/css-support/?utm_source=gh) this way add `stylersCloudSupportMode: true` to config and remove `stylersCloudNonProdDomains` (it is not needed).
 
 #### Domain hashes
 
