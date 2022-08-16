@@ -2,6 +2,21 @@
 
 #### ⚠️ Pushed to `main`
 
+- update lock file (pom@stylers.cloud)
+- * v0.1.3 ([@seyd](https://github.com/seyd))
+- * fix SDK to prod env ([@seyd](https://github.com/seyd))
+
+#### Authors: 2
+
+- Johnny Seyd ([@seyd](https://github.com/seyd))
+- Stanislav Parnicky (pom@stylers.cloud)
+
+---
+
+# v0.1.3 (Tue Aug 16 2022)
+
+#### ⚠️ Pushed to `main`
+
 - * v0.1.3 ([@seyd](https://github.com/seyd))
 - * fix SDK to prod env ([@seyd](https://github.com/seyd))
 
