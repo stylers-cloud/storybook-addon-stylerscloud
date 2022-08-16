@@ -64,7 +64,7 @@ function displayToolState(state: any) {
       };
 
       var script = document.createElement("script");
-      script.src = "https://stage.sdk.stylers.cloud/sdk.js";
+      script.src = "https://sdk.stylers.cloud/sdk.js";
       document.head.appendChild(script);
     }
   }
