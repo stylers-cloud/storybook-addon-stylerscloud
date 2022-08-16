@@ -1,3 +1,16 @@
+# v0.1.3 (Tue Aug 16 2022)
+
+#### ⚠️ Pushed to `main`
+
+- * v0.1.3 ([@seyd](https://github.com/seyd))
+- * fix SDK to prod env ([@seyd](https://github.com/seyd))
+
+#### Authors: 1
+
+- Johnny Seyd ([@seyd](https://github.com/seyd))
+
+---
+
 # v0.1.2 (Thu Jun 16 2022)
 
 #### 🐛 Bug Fix
